@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/myriadpro-regular.otf');
+}
+
+body {
+    /*font-family: 'MyriadProRegular';*/
+    color: #000;
+    font-size: 14px;
+}
+
+header .navbar-brand {
+    width: 240px;
+    white-space: inherit;
+}
+
+header .navbar-brand .sublogo {
+    width: 40%;
+    float: right;
+    margin-top: 3px;
+}
+
+header .navbar-brand img {
+    vertical-align: top;
+}
+
+header .navbar {
+    padding: 12px 0px;
+}
+
+.lang-section {
+    margin-left: auto;
+}
+
+.lang-section a {
+    color: #000;
+    position: relative;
+    font-size: 17px;
+}
+
+.img-section {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+.lang-section .wpml-ls-item-toggle:before {
+    content: '';
+    height: 43px;
+    width: 2px;
+    background: #96B7B9;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 21px);
+    left: -23px;
+}
+
+.lang-section .wpml-ls-legacy-dropdown a:hover,.lang-section .wpml-ls-legacy-dropdown a:focus,.lang-section .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover>a {
+    background: #fff !important;
+    text-decoration: none;
+}
+
+.lang-section .wpml-ls-sub-menu a:hover,.lang-section .wpml-ls-sub-menu a:focus,.lang-section .wpml-ls-sub-menu:hover>a {
+    background: #157ec4 !important;
+    text-decoration: none;
+    color: #fff;
+}
+
+.lang-section .wpml-ls-sub-menu {
+    right: auto;
+    border: 0;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lang-section .wpml-ls-sub-menu a {
+    padding: 6px 12px;
+    font-size: 15px;
+    border:none;
+}
+
+.lang-section .wpml-ls-sub-menu span {
+    display: inline-block;
+    line-height: normal;
+}
+
+.lang-section .wpml-ls-sub-menu .wpml-ls-display {
+    padding-top: 5px;
+}
+
+.lang-section .wpml-ls-item-toggle {
+    border:0;
+}
+
+.head-lang .wpml-ls-sidebars-language-sw {
+    width: auto;
+}
+
+.lang-section a:after {
+    border: 0.3em solid transparent !important;
+    border-top: 0.3em solid #96B7B9 !important;
+}
+
+.banner-content .title {
+    font-size: 36px;
+}
+
+.banner-content .subtitle {
+    font-size: 18px;
+    padding-top: 1px;
+}
+
+.banner-content .date {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #575756;
+}
+
+.banner-content .date:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #96B7B9;
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    bottom: -2px;
+}
+
+.banner-content .title, .banner-content .subtitle, .banner-content .date {
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.banner-content .desc {
+    padding-top: 25px;
+    line-height: 26px;
+}
+
+.banner-content {
+    padding-top: 50px;
+}
+
+.banner-section .img-section img { display: none; }
+
+@media only screen and (min-width:1600px) {
+    body {
+        font-size: 16px;
+    }
+    .banner-content .title {
+        font-size: 38px;
+    }
+
+    .banner-content .subtitle {
+        font-size: 20px;
+    }
+
+    .banner-content .date {
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width:1200px) {
+    .banner-content .title {
+        font-size: 34px;
+    }
+    .lang-section a {
+        font-size: 16px;
+    }
+    .lang-section .wpml-ls-item-toggle:before {
+        height: 33px;
+        top: calc(50% - 17px);
+        left: -10px;
+    }
+    .banner-content .desc p {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:991px) {
+    .banner-content .title {
+        font-size: 32px;
+    }
+    header .navbar-brand {
+        width: 200px;
+    }
+    header .navbar {
+        padding: 8px 16px;
+    }
+    .banner-content {
+        padding-top: 40px;
+    }
+}
+@media only screen and (max-width:767px) {
+    header .navbar-brand {
+        width: 150px;
+    }
+    header .navbar {
+        padding: 5px 0px;
+    }
+    .banner-content {
+        padding-top: 30px;
+    }
+    .banner-content .title {
+        font-size: 26px;
+    }
+
+    .banner-content .subtitle {
+        font-size: 17px;
+    }
+    .banner-content .desc {
+        padding-top: 20px;
+        line-height: 24px;
+    }
+    .banner-section .img-section img { display: block;width: 100%; }
+    .banner-section .img-section { background:none;height: auto; }
+}
+@media only screen and (max-width:576px) {
+    header .navbar-brand {
+        width: 170px;
+    }
+    header .navbar-brand .sublogo {
+        margin-top: 1px;
+    }
+    .lang-section a {
+        font-size: 14px;
+    }
+    .lang-section .wpml-ls-item-toggle:before {
+        height: 25px;
+        top: calc(50% - 12px);
+        left: 0px;
+    }
+    .entry-header h3{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,129 @@
+#reviews-and-edits-metabox {
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+#reviews-and-edits-metabox table.dataTable.no-footer {
+    border-bottom: 1px solid #cdcbcb;
+}
+#reviews-and-edits-metabox table.dataTable thead th {
+    background-color: #2a73aa;
+    color: #fff;
+    border-bottom: none;
+}
+#reviews-and-edits-metabox table.dataTable tbody td {
+    word-wrap: normal;
+    white-space: initial;
+}
+#reviews-and-edits-metabox table.dataTable {
+    margin-top: 10px;
+}
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_length,
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_filter {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_filter, 
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_info, 
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_processing, 
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_paginate {
+	margin-top: 10px;
+}
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_paginate .paginate_button {
+	border: none;
+}
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+#reviews-and-edits-metabox .dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+	border: none;
+    background: #2a73aa;
+    border-radius: 0;
+    color: #fff !important;
+}
+#reviews-and-edits-metabox #suggested-edit-wrapper,
+#reviews-and-edits-metabox #reviews-datatable-wrapper{
+    background: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    border: solid 1px #dedddd;
+}
+#reviews-and-edits-metabox #suggested-edit-wrapper h2,
+#reviews-and-edits-metabox #reviews-datatable-wrapper h2 {
+    font-weight: 600;
+    border-bottom: solid 1px #dedddd;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+#reviews-and-edits-metabox table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
+#reviews-and-edits-metabox table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before{
+
+    content: '';
+    position: absolute;
+    border: 5px solid #828282;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    border-radius: 0px;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 13px;
+    box-shadow: none;
+
+}
+#reviews-and-edits-metabox table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
+#reviews-and-edits-metabox table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before{
+    border-top:0px solid transparent;
+    border-bottom:5px solid #828282;
+}
+#reviews-and-edits-metabox table.dataTable>tbody>tr.child ul.dtr-details { margin: 10px 0px 0px; }
+#reviews-and-edits-metabox table.dataTable>tbody>tr.child ul.dtr-details>li {
+    padding: 0.2em 0;
+    border-bottom: none;
+}
+#reviews-and-edits-metabox table.dataTable>tbody>tr.child span.dtr-title {
+    display: inline-block;
+    min-width: 75px;
+    font-weight: bold;
+    width: 25%;
+    vertical-align: top;
+}
+#reviews-and-edits-metabox table.dataTable>tbody>tr.child span.dtr-data {
+    display: inline-block;
+    width: 74%;
+}
+#reviews-and-edits-metabox table.dataTable>tbody>tr.child td.child {
+    padding-left: 5px;
+}
+#reviews-and-edits-metabox table.dataTable.compact thead th, table.dataTable.compact thead td {
+    padding: 8px 17px 8px 4px;
+}
+#reviews-and-edits-metabox table.dataTable.compact thead th {
+    text-align: left;
+}
+#reviews-and-edits-metabox table.dataTable.compact thead th.dt-center {
+    padding: 8px 17px 8px 14px;
+}
+.custom-btn-success{
+    background-color: #5cb85c !important; 
+}
+.editor-width{
+    width: 200px !important;
+}
+@media (max-width: 1200px) {
+    #reviews-and-edits-metabox table.dataTable>tbody>tr.child span.dtr-title {
+        width: 35%;
+    }
+    #reviews-and-edits-metabox table.dataTable>tbody>tr.child span.dtr-data {
+        width: 64%;
+    }
+}
+@media (max-width: 850px) {
+    #reviews-and-edits-metabox table.dataTable>tbody>tr.child span.dtr-title {
+        width: 25%;
+    }
+    #reviews-and-edits-metabox table.dataTable>tbody>tr.child span.dtr-data {
+        width: 74%;
+    }
+}
